@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostInformationFragment">
+
+    <ImageView
+        android:id="@+id/mainImage_ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemNameText_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Toyota Camry GLE 2019"
+        android:textColor="@color/colorGreen"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage_ImageView" />
+
+    <TextView
+        android:id="@+id/dateText_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAsh"
+        android:text="2021/05/25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameText_textView" />
+
+    <TextView
+        android:id="@+id/time_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAsh"
+        android:text="2021/05/25"
+        app:layout_constraintStart_toEndOf="@+id/dateText_textView"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameText_textView" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_baseline_person_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateText_textView" />
+
+    <TextView
+        android:id="@+id/userNametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Abduremen"
+        android:textStyle="bold"
+        android:textColor="@color/colorAsh"
+        app:layout_constraintStart_toEndOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/dateText_textView" />
+
+
+    <View
+        android:layout_width="15dp"
+        android:layout_height="17dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_baseline_location_on_24"
+        app:layout_constraintEnd_toStartOf="@+id/location_textView"
+        app:layout_constraintTop_toBottomOf="@+id/dateText_textView" />
+
+
+    <TextView
+        android:id="@+id/location_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Riyahd"
+        android:textStyle="bold"
+        android:textColor="@color/colorAsh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateText_textView" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="I have a "
+        android:textSize="20sp"
+        android:textColor="@color/colorAsh"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNametextView" />
+
+    <TextView
+        android:id="@+id/ItemNameForSaletextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Toyata Camry GLE 2019"
+        android:textColor="@color/colorAsh"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/userNametextView" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="For sale in "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorAsh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/itemForSaleLocationtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Riyahd"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorAsh"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Please Contact me :"
+        android:textColor="@color/colorAsh"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/phoneNumber_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textSize="20sp"
+        android:text="+2349091112345"
+        android:textColor="@color/colorGreen"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
